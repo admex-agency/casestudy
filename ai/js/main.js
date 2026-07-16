@@ -37,3 +37,45 @@
     });
   }
 })();
+
+// Mobile case navigation dropdown
+(() => {
+  const nav = document.querySelector('.nav');
+  const badge = nav?.querySelector('.nav-badge');
+  if (!nav || !badge) return;
+
+  badge.setAttribute('role', 'button');
+  badge.setAttribute('tabindex', '0');
+  badge.setAttribute('aria-haspopup', 'true');
+  badge.setAttribute('aria-expanded', 'false');
+  badge.setAttribute('aria-label', 'Mở danh sách case study');
+
+  const setOpen = (open) => {
+    nav.classList.toggle('case-menu-open', open);
+    document.body.classList.toggle('case-menu-open', open);
+    badge.setAttribute('aria-expanded', String(open));
+  };
+
+  const toggle = () => setOpen(!nav.classList.contains('case-menu-open'));
+  badge.addEventListener('click', toggle);
+  badge.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      toggle();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.classList.contains('case-menu-open')) return;
+    const switcher = document.querySelector('.case-switcher');
+    if (!nav.contains(event.target) && !switcher?.contains(event.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setOpen(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) setOpen(false);
+  });
+})();
