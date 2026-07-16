@@ -493,3 +493,89 @@ body.page-case-04 .ecosystem p{font-size:18px;color:#bdd3cd;max-width:780px;posi
     .nav{padding-top:env(safe-area-inset-top)}
   }
 }
+
+/* Mobile case dropdown */
+@media (max-width:760px){
+  .nav-badge{
+    cursor:pointer!important;
+    gap:7px!important;
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .nav-badge::after{
+    content:"";
+    width:6px;
+    height:6px;
+    border-right:1.5px solid currentColor;
+    border-bottom:1.5px solid currentColor;
+    transform:rotate(45deg) translateY(-1px);
+    transform-origin:center;
+    transition:transform .22s ease;
+  }
+  .nav.case-menu-open .nav-badge::after{
+    transform:rotate(225deg) translate(-1px,-1px);
+  }
+  .case-switcher{
+    display:none!important;
+  }
+  .nav.case-menu-open + .case-switcher,
+  .nav.case-menu-open .case-switcher{
+    display:grid!important;
+    position:fixed!important;
+    top:calc(58px + env(safe-area-inset-top, 0px))!important;
+    left:12px!important;
+    right:12px!important;
+    z-index:99!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:10px!important;
+    grid-template-columns:1fr!important;
+    gap:6px!important;
+    border:1px solid rgba(11,23,21,.10)!important;
+    border-radius:18px!important;
+    background:rgba(255,255,255,.98)!important;
+    box-shadow:0 18px 48px rgba(7,27,24,.18)!important;
+    backdrop-filter:blur(18px)!important;
+    -webkit-backdrop-filter:blur(18px)!important;
+  }
+  .nav.case-menu-open .case-switcher{
+    top:58px!important;
+  }
+  .case-switcher .case-tab{
+    width:100%!important;
+    min-width:0!important;
+    padding:13px 14px!important;
+    border-radius:12px!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:12px!important;
+    border:0!important;
+    background:#f3f7f5!important;
+  }
+  .case-switcher .case-tab.active{
+    background:var(--dark)!important;
+    color:#fff!important;
+  }
+  .case-switcher .case-num{
+    flex:0 0 auto!important;
+    font-size:11px!important;
+  }
+  .case-switcher .case-name{
+    min-width:0!important;
+    font-size:13px!important;
+    line-height:1.25!important;
+  }
+  body.case-menu-open{overflow:hidden!important;}
+  body.case-menu-open::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:90;
+    background:rgba(7,27,24,.28);
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+  }
+  .nav{z-index:101!important;}
+  .case-switcher{z-index:100!important;}
+}
