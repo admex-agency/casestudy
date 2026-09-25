@@ -38,11 +38,11 @@
 <section class="production-team"><div class="wrap">
 <div class="team-head"><div class="eyebrow">PRODUCTION TEAM</div><div><h2>Những người đứng sau<br>nhịp vận hành của sự kiện.</h2><p class="copy">Từ quản lý dự án, sáng tạo, vận hành đến production — mỗi vai trò là một mắt xích trong cùng một workflow.</p></div></div>
 <div class="team-grid">
-<article class="person person-cuong"><img src="assets/team/cuong.jpg" alt="Cường (Oscar)"><h3>Cường <small>(Oscar)</small></h3><p>Giám đốc Dự án, admeX</p></article>
+<article class="person person-cuong"><img src="assets/team/cuong.jpg" alt="Cường (Oscar)"><h3>Cường <small>(Oscar)</small></h3><p>Project Director, admeX</p></article>
 <article class="person"><img src="assets/team/xuantruong.jpg" alt="Xuân Trường"><h3>Xuân Trường</h3><p>Executive Producer, Kinglive</p></article>
 <article class="person"><img src="assets/team/hanguyen.jpg" alt="Hà Nguyễn"><h3>Hà Nguyễn</h3><p>Producer, Kinglive</p></article>
 <article class="person person-huy"><img src="assets/team/huyduong.jpg" alt="Huy Dương"><h3>Huy Dương</h3><p>Video Editor, Kinglive</p></article>
-<article class="person"><img src="assets/team/duyanh.jpg" alt="Duy Anh (Aggie)"><h3>Duy Anh <small>(Aggie)</small></h3><p>Giám đốc Sáng tạo</p></article>
+<article class="person"><img src="assets/team/duyanh.jpg" alt="Duy Anh (Aggie)"><h3>Duy Anh <small>(Auggie)</small></h3><p>Creative Director</p></article>
 <article class="person"><img src="assets/team/haiyen.jpg" alt="Hải Yến (Alex)"><h3>Hải Yến <small>(Alex)</small></h3><p>Operations Manager</p></article>
 <article class="person"><img src="assets/team/phuongdung.jpg" alt="Phương Dung (Chloe)"><h3>Phương Dung <small>(Chloe)</small></h3><p>Operations, Social</p></article>
 <article class="person"><img src="assets/team/vananh.jpg" alt="Vân Anh (Claire)"><h3>Vân Anh <small>(Claire)</small></h3><p>Operations, Media</p></article>
@@ -104,7 +104,7 @@
 <div class="lightbox" id="lb"><button class="lb close">×</button><button class="lb prev">‹</button><img id="lbimg"><button class="lb next">›</button><div class="count" id="count"></div></div>
 <script>
 const images=['"assets/NLE.jpg"'];
-const files=["assets/NLE.jpg","assets/NLE-1.jpg","assets/NLE-2.jpg","assets/NLE-3.jpg","assets/NLE-4.jpg","assets/NLE-5.jpg","assets/NLE-6.jpg","assets/NLE-7.jpg","assets/NLE-8.jpg","assets/NLE-9.jpg","assets/NLE-10.jpg","assets/NLE-11.jpg","assets/NLE-12.jpg","assets/NLE-13.jpg","assets/NLE-14.jpg"];
+const files=["assets/NLE.jpg","assets/NLE-1.jpg","assets/NLE-2.jpg","assets/NLE-3.jpg","assets/NLE-4.jpg","assets/NLE-5.jpg","assets/NLE-6.jpg","assets/NLE-7.jpg","assets/NLE-8.jpg","assets/NLE-9.jpg","assets/NLE-10.jpg","assets/NLE-11.jpg","assets/NLE-12.jpg","assets/NLE-13.jpg","assets/NLE-14.jpg","assets/NLE-15.jpg","assets/NLE-16.jpg"];
 const gallery=document.getElementById('gallery');files.forEach((src,i)=>{const b=document.createElement('button');b.className='gallery-item';b.innerHTML=`<img src="${src}" alt="Nam Long Experience 2026 ${i+1}" loading="lazy">`;b.onclick=()=>openLB(i);gallery.appendChild(b)});
 const lb=document.getElementById('lb'),im=document.getElementById('lbimg'),count=document.getElementById('count');let cur=0;
 function show(){im.src=files[cur];count.textContent=`${cur+1} / ${files.length}`}function openLB(i){cur=i;show();lb.classList.add('open');document.body.style.overflow='hidden'}function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}function move(d){cur=(cur+d+files.length)%files.length;show()}
