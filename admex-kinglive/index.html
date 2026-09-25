@@ -23,6 +23,75 @@
 @media(max-width:1050px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.process-columns{grid-template-columns:1fr 1fr}.process-columns .phase:last-child{grid-column:1/-1}.take-head{grid-template-columns:1fr;gap:22px}}
 @media(max-width:800px){.team-head{grid-template-columns:1fr;gap:22px}.team-grid{grid-template-columns:1fr 1fr}.person.crew{min-height:280px}.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions a{display:flex;justify-content:space-between;align-items:center}.wrap{width:min(calc(100% - 34px),var(--max))}section{padding:76px 0}.hero-bottom,.intro-grid,.process-columns,.speed-story,.gallery-head,.take-grid{grid-template-columns:1fr}.process-columns .phase:last-child{grid-column:auto}.brief,.req-grid,.rank-grid,.video-row{grid-template-columns:1fr}.hero{min-height:82vh}.brief{gap:10px}.brief .glass{min-height:120px}.orbit{height:500px;transform:scale(.68);margin:-35px -105px}.core{width:210px;height:210px;padding:26px}.speed-card{padding:28px}.clock{width:260px;height:260px}.clock .value{font-size:86px}.gallery-grid{columns:1}.gallery-item{width:100%}.video-row{grid-template-columns:1fr;max-width:360px;margin-left:auto;margin-right:auto}.speed-proof{border-right:0;border-bottom:1px solid rgba(0,0,0,.09);padding:20px 0 34px}.client-callout{grid-template-columns:1fr!important}.footer{display:block;line-height:1.8}}
 </style>
+
+<style>
+.takeaway-statement{
+  margin-top:16px;
+  padding:34px 38px;
+  border-radius:28px;
+  display:grid;
+  grid-template-columns:.42fr 1.58fr;
+  gap:36px;
+  align-items:start;
+}
+.takeaway-statement p{
+  margin:0;
+  font-size:clamp(20px,2vw,29px);
+  line-height:1.42;
+  letter-spacing:-.025em;
+  color:#29292d;
+}
+.takeaway-statement strong{font-weight:700;color:#111}
+@media(max-width:800px){
+  .takeaway-statement{grid-template-columns:1fr;gap:16px;padding:26px}
+  .takeaway-statement p{font-size:20px}
+}
+</style>
+
+
+<style>
+.realtime-moments{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:34px;
+}
+.rt-moment{
+  border:0;padding:0;margin:0;
+  background:#ddd;border-radius:20px;overflow:hidden;
+  aspect-ratio:4/3;cursor:zoom-in;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.rt-moment img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .4s cubic-bezier(.2,.7,.2,1);
+}
+.rt-moment:hover img{transform:scale(1.035)}
+.rt-lightbox{
+  position:fixed;inset:0;z-index:999;
+  display:none;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.94);backdrop-filter:blur(8px);
+}
+.rt-lightbox.open{display:flex}
+.rt-lightbox img{max-width:88vw;max-height:86vh;object-fit:contain}
+.rt-lb-btn{
+  position:absolute;width:50px;height:50px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.12);color:#fff;
+  backdrop-filter:blur(12px);font-size:26px;cursor:pointer;
+}
+.rt-lb-close{right:24px;top:24px}
+.rt-lb-prev{left:24px;top:50%;transform:translateY(-50%)}
+.rt-lb-next{right:24px;top:50%;transform:translateY(-50%)}
+.rt-lb-count{position:absolute;bottom:20px;color:#aaa;font-size:12px}
+@media(max-width:800px){
+  .realtime-moments{grid-template-columns:repeat(2,1fr);gap:9px;margin-top:24px}
+  .rt-moment{border-radius:15px}
+  .rt-lb-prev{left:10px}.rt-lb-next{right:10px}.rt-lb-close{right:14px;top:14px}
+  .rt-lightbox img{max-width:94vw;max-height:82vh}
+}
+</style>
+
 </head>
 <body>
 <header class="hero"><div class="wrap"><div class="eyebrow" style="color:#fff">CASE SHOWCASE · NAM LONG GROUP</div><h1>Nam Long<br>Experience 2026</h1><div class="hero-bottom"><p>Từ một scope quay – chụp sự kiện đến một hệ thống sản xuất nội dung vận hành theo thời gian thực.</p><div class="hero-meta glass"><b>18.09 — 20.09.2026</b><br>Media Agency · admeX Creative Media Agency<br>Production House · Kinglive</div></div></div></header>
@@ -33,7 +102,12 @@
 <article class="take glass float-card"><span>02</span><h3>Rõ nhiệm vụ, rõ trách nhiệm, rõ điểm phối hợp</h3><p>Client, agency, production và các bên tham gia cần biết mình phải làm gì, ai chịu trách nhiệm, thông tin cần chuyển cho ai và thời điểm nào cần phối hợp để tránh miss thông tin hoặc triển khai sai.</p></article>
 <article class="take glass float-card"><span>03</span><h3>Một brief chung tạo ra một nhịp vận hành chung</h3><p>Khi cùng làm việc trên một brief đủ chi tiết, các luồng capture, selection, retouch, QC, approval, edit và handover có thể chạy song song mà vẫn kiểm soát được chất lượng.</p></article>
 <article class="take glass float-card"><span>04</span><h3>Kinh nghiệm cần được chuyển thành tiêu chuẩn</h3><p>Những gì đã được kiểm chứng qua Nam Long Experience 2026 cần được hệ thống hóa thành cách làm, tiêu chuẩn và kinh nghiệm phối hợp để tiếp tục ứng dụng và nâng cấp cho các dự án sau.</p></article>
-</div></div></section>
+</div>
+<div class="takeaway-statement glass">
+  <div class="eyebrow">COLLABORATION MATTERS</div>
+  <p><strong>Năng lực tốt cần một cơ chế phối hợp tốt để phát huy hết giá trị.</strong> Kinglive có năng lực production; khi có một đội ngũ đồng hành đủ hiểu chuyên môn, cùng quản trị chất lượng và cùng chịu trách nhiệm cho kết quả, năng lực đó được phát huy tốt hơn.</p>
+</div>
+</div></section>
 
 <section class="production-team"><div class="wrap">
 <div class="team-head"><div class="eyebrow">PRODUCTION TEAM</div><div><h2>Những người đứng sau<br>nhịp vận hành của sự kiện.</h2><p class="copy">Từ quản lý dự án, sáng tạo, vận hành đến production — mỗi vai trò là một mắt xích trong cùng một workflow.</p></div></div>
@@ -90,7 +164,14 @@
 <h2>Nội dung không chờ sự kiện kết thúc mới bắt đầu được xử lý.</h2>
 <p>Trong khi sự kiện vẫn tiếp tục, hình ảnh đã được chọn và retouch, source video đã được kiểm tra, các bên cùng phản hồi và phê duyệt để team có thể tiếp tục dựng. Nhờ workflow được chuẩn bị từ trước và vận hành đồng thời tại hiện trường, video recap có thể hoàn thiện và xuất bản khoảng 60 phút sau khi hoạt động kết thúc.</p>
 <div class="mini-flow"><span>Capture</span><span>Selection</span><span>Realtime Retouch</span><span>On-site QC</span><span>Client Approval</span><span>Edit</span><span>Publish / Handover</span></div>
-</div></div></div></section>
+</div></div>
+<div class="realtime-moments">
+  <button class="rt-moment" type="button" data-rt-index="0"><img src="assets/NLE-2.jpg" alt="Nam Long Experience — realtime moment 1"></button>
+  <button class="rt-moment" type="button" data-rt-index="1"><img src="assets/NLE-13.jpg" alt="Nam Long Experience — realtime moment 2"></button>
+  <button class="rt-moment" type="button" data-rt-index="2"><img src="assets/NLE-14.jpg" alt="Nam Long Experience — realtime moment 3"></button>
+  <button class="rt-moment" type="button" data-rt-index="3"><img src="assets/NLE-16.jpg" alt="Nam Long Experience — realtime moment 4"></button>
+</div>
+</div></section>
 
 <section class="ranks"><div class="wrap"><div class="eyebrow" style="color:#ff9aa1">COMMUNICATION IMPACT</div><h2 style="margin-top:16px;max-width:1000px">Khi execution tại sự kiện góp phần kéo dài sức lan tỏa.</h2><div class="rank-grid"><div class="rank"><b>#03</b><p>Top 10 Sự kiện Thương hiệu nổi bật nhất tuần<br><small>Theo Kompa</small></p></div><div class="rank"><b>#07</b><p>Top 8 Sự kiện & Chiến dịch Thương hiệu nổi bật nhất tuần<br><small>Theo Socialite</small></p></div></div></div></section>
 
@@ -109,7 +190,42 @@ const gallery=document.getElementById('gallery');files.forEach((src,i)=>{const b
 const lb=document.getElementById('lb'),im=document.getElementById('lbimg'),count=document.getElementById('count');let cur=0;
 function show(){im.src=files[cur];count.textContent=`${cur+1} / ${files.length}`}function openLB(i){cur=i;show();lb.classList.add('open');document.body.style.overflow='hidden'}function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}function move(d){cur=(cur+d+files.length)%files.length;show()}
 document.querySelector('.close').onclick=closeLB;document.querySelector('.prev').onclick=()=>move(-1);document.querySelector('.next').onclick=()=>move(1);lb.onclick=e=>{if(e.target===lb)closeLB()};document.onkeydown=e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)};
-</script></body></html>
+</script>
+<div class="rt-lightbox" id="rtLightbox" aria-hidden="true">
+  <button class="rt-lb-btn rt-lb-close" type="button" aria-label="Đóng">×</button>
+  <button class="rt-lb-btn rt-lb-prev" type="button" aria-label="Ảnh trước">‹</button>
+  <img id="rtLbImage" alt="Nam Long Experience">
+  <button class="rt-lb-btn rt-lb-next" type="button" aria-label="Ảnh tiếp">›</button>
+  <div class="rt-lb-count" id="rtLbCount"></div>
+</div>
+
+
+<script>
+(() => {
+  const rtFiles=["assets/NLE-2.jpg","assets/NLE-13.jpg","assets/NLE-14.jpg","assets/NLE-16.jpg"];
+  const box=document.getElementById("rtLightbox");
+  const img=document.getElementById("rtLbImage");
+  const count=document.getElementById("rtLbCount");
+  let current=0;
+  const show=()=>{img.src=rtFiles[current];count.textContent=`${current+1} / ${rtFiles.length}`};
+  const open=i=>{current=i;show();box.classList.add("open");box.setAttribute("aria-hidden","false");document.body.style.overflow="hidden"};
+  const close=()=>{box.classList.remove("open");box.setAttribute("aria-hidden","true");document.body.style.overflow=""};
+  const move=d=>{current=(current+d+rtFiles.length)%rtFiles.length;show()};
+  document.querySelectorAll(".rt-moment").forEach((el,i)=>el.addEventListener("click",()=>open(i)));
+  box.querySelector(".rt-lb-close").addEventListener("click",close);
+  box.querySelector(".rt-lb-prev").addEventListener("click",()=>move(-1));
+  box.querySelector(".rt-lb-next").addEventListener("click",()=>move(1));
+  box.addEventListener("click",e=>{if(e.target===box)close()});
+  document.addEventListener("keydown",e=>{
+    if(!box.classList.contains("open"))return;
+    if(e.key==="Escape")close();
+    if(e.key==="ArrowLeft")move(-1);
+    if(e.key==="ArrowRight")move(1);
+  });
+})();
+</script>
+
+</body></html>
 <style>
 .process-columns{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important}
 .process-columns>.phase{display:block!important;position:relative!important;width:auto!important;min-width:0!important;height:auto!important;margin:0!important;padding:34px!important;border-radius:30px!important;background:rgba(255,255,255,.13)!important;border:1px solid rgba(255,255,255,.24)!important;backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important}
