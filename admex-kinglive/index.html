@@ -1,1 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nam Long Experience 2026 — admeX × Kinglive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,500;6..144,600;6..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#a40c15;--red2:#d51b28;--ink:#101012;--muted:#6d6d73;--bg:#f5f5f7;--glass:rgba(255,255,255,.68);--stroke:rgba(255,255,255,.72);--max:1440px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Google Sans Flex","Google Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}.wrap{width:min(calc(100% - 72px),var(--max));margin:auto}section{padding:110px 0}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--red)}.glass{background:linear-gradient(135deg,rgba(255,255,255,.76),rgba(255,255,255,.48));border:1px solid var(--stroke);box-shadow:0 18px 60px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.8);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.hero{min-height:94vh;position:relative;display:flex;align-items:flex-end;color:white;overflow:hidden;background:#111}.hero:after{content:"";position:absolute;inset:-3%;background:url("assets/hero-nle.jpg") center 48%/cover no-repeat;animation:heroDrift 14s ease-in-out infinite alternate;z-index:0}@keyframes heroDrift{0%{transform:scale(1.02) translate3d(0,0,0)}100%{transform:scale(1.075) translate3d(-.7%,-.5%,0)}}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.10),rgba(0,0,0,.15) 35%,rgba(0,0,0,.78) 100%);z-index:1}.hero .wrap{position:relative;z-index:2;padding-bottom:62px;animation:heroCopy 1s cubic-bezier(.2,.7,.2,1) both}@keyframes heroCopy{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}.hero h1{font-size:clamp(60px,8.5vw,138px);line-height:.86;letter-spacing:-.07em;margin:18px 0 30px;max-width:1250px}.hero-bottom{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:end}.hero p{font-size:clamp(20px,2vw,29px);line-height:1.38;margin:0;max-width:850px}.hero-meta{padding:22px 24px;border-radius:22px;font-size:14px;line-height:1.75;color:#fff}
+.intro-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}h2{font-size:clamp(42px,5.3vw,76px);line-height:.98;letter-spacing:-.055em;margin:0}.copy{font-size:19px;line-height:1.65;color:#444;margin:24px 0 0}.brief{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:54px}.brief .glass{border-radius:24px;padding:25px;min-height:160px}.brief small{display:block;color:var(--muted);font-size:12px;margin-bottom:28px}.brief strong{font-size:18px;line-height:1.3}
+.requirements{background:#fff}.req-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:54px}.req{padding:30px;border-radius:28px;background:#f5f5f7;min-height:250px}.req .num{font-size:14px;color:var(--red);font-weight:700}.req h3{font-size:29px;line-height:1.05;letter-spacing:-.035em;margin:54px 0 15px}.req p{color:var(--muted);line-height:1.55}
+.process{position:relative;background:url("assets/NLE-8.jpg") center/cover fixed;color:white}.process:before{content:"";position:absolute;inset:0;background:rgba(9,9,11,.78)}.process .wrap{position:relative}.process h2{max-width:950px}.process-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:58px;align-items:stretch}.phase{min-width:0;height:100%}.phase{padding:38px;border-radius:32px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(22px)}.phase h3{font-size:34px;margin:0 0 30px}.step{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(255,255,255,.18)}.step b{color:#ff9aa1}.step span{line-height:1.45}
+.convergence{position:relative;background:url("assets/NLE-10.jpg") center/cover no-repeat;color:white;overflow:hidden}.convergence:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,12,15,.78),rgba(80,7,14,.62))}.convergence .wrap{position:relative;z-index:1}.conv-head{max-width:930px}.conv-head p{color:#e0dde0}.orbit{height:700px;position:relative;margin-top:35px}.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:230px;height:230px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.98);box-shadow:0 24px 70px rgba(0,0,0,.22),0 0 0 16px rgba(255,255,255,.12);backdrop-filter:blur(22px);z-index:3;padding:30px;overflow:hidden}.core img{width:100%;height:100%;object-fit:contain}.ring{position:absolute;left:50%;top:50%;border:1px solid rgba(255,255,255,.22);border-radius:50%;transform:translate(-50%,-50%)}.ring.r1{width:470px;height:470px}.ring.r2{width:650px;height:650px}.orbit-track{position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px;animation:spin 32s linear infinite}.orbit-track.two{width:680px;height:680px;margin:-340px;animation-duration:44s;animation-direction:reverse}.pill{position:absolute;padding:14px 19px;border-radius:999px;white-space:nowrap;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);box-shadow:0 12px 34px rgba(0,0,0,.18);backdrop-filter:blur(18px);font-size:13px;color:#fff;animation:counter 32s linear infinite}.two .pill{animation-duration:44s;animation-direction:reverse}.p1{left:50%;top:-18px;transform:translateX(-50%)}.p2{right:-40px;top:45%}.p3{left:50%;bottom:-18px;transform:translateX(-50%)}.p4{left:-45px;top:45%}@keyframes spin{to{transform:rotate(360deg)}}@keyframes counter{to{rotate:-360deg}}
+.speed{background:linear-gradient(135deg,#f7f7f9,#ececf1);overflow:hidden}.speed-story{border-radius:38px;padding:56px;display:grid;grid-template-columns:.62fr 1.38fr;gap:58px;align-items:center;overflow:hidden;position:relative}.speed-proof{padding:38px 34px;border-right:1px solid rgba(0,0,0,.09)}.speed-proof span{display:block;font-size:clamp(88px,10vw,150px);font-weight:700;letter-spacing:-.085em;line-height:.78;color:var(--red)}.speed-proof small{display:block;margin-top:28px;font-size:12px;line-height:1.45;letter-spacing:.12em;font-weight:700;color:#555}.speed-card:after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:rgba(164,12,21,.09);filter:blur(5px);right:-100px;top:-100px}.clock{position:relative;width:340px;height:340px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;background:rgba(255,255,255,.46);border:1px solid white;box-shadow:0 28px 80px rgba(0,0,0,.09),inset 0 0 0 18px rgba(255,255,255,.25)}.clock:before{content:"";position:absolute;inset:25px;border-radius:50%;border:1px dashed rgba(164,12,21,.28)}.clock .value{font-size:112px;letter-spacing:-.09em;font-weight:700;color:var(--red);line-height:.75;text-align:center}.clock small{display:block;font-size:14px;letter-spacing:.18em;margin-top:22px;color:var(--ink)}.speed-copy{position:relative;z-index:2}.speed-copy h2{margin:14px 0 24px}.speed-copy p{font-size:19px;line-height:1.65;color:#444}.mini-flow{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.mini-flow span{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.75);font-size:12px;border:1px solid white}
+.ranks{background:url("assets/NLE-4.jpg") center/cover fixed;position:relative;color:white}.ranks:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.56))}.ranks .wrap{position:relative}.rank-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:55px}.rank{padding:38px;border-radius:32px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.23);backdrop-filter:blur(20px);min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:background .35s ease,transform .35s ease,box-shadow .35s ease}.rank:hover{background:linear-gradient(135deg,#7f0710,#c71420 58%,#e63540);transform:translateY(-5px);box-shadow:0 24px 65px rgba(104,0,8,.28)}.rank b{font-size:120px;line-height:.8;letter-spacing:-.08em}.rank p{font-size:18px;line-height:1.45;margin:0;color:#eee}.rank small{color:#bbb}
+.gallery-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:60px;margin-bottom:50px}.gallery-grid{columns:3;column-gap:12px}.gallery-item{width:100%;border:0;padding:0;border-radius:20px;overflow:hidden;cursor:zoom-in;background:#ddd;margin:0 0 12px;break-inside:avoid;display:block}.gallery-item img{width:100%;height:auto;display:block;transition:.45s}.gallery-item:hover img{transform:scale(1.025)}.video-row{display:grid;grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;gap:18px;margin:0 0 26px}.video-card{background:rgba(255,255,255,.72);border:1px solid white;box-shadow:0 14px 44px rgba(0,0,0,.08);backdrop-filter:blur(18px);border-radius:22px;padding:12px;color:var(--ink)}.video-card video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:15px;display:block;background:#111}.video-card h3{margin:12px 7px 6px;font-size:18px}.production-team{background:#fff}.team-head{display:grid;grid-template-columns:.45fr 1.55fr;gap:60px;margin-bottom:56px}.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.person{background:#f5f5f7;border-radius:26px;padding:12px 12px 24px;overflow:hidden}.person img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:18px;filter:grayscale(1)}.person h3{font-size:22px;letter-spacing:-.035em;margin:20px 10px 7px}.person h3 small{font-size:.68em;font-weight:500;color:#6e6e73}.person p{font-size:14px;color:#6e6e73;margin:0 10px;line-height:1.4}.person.crew{min-height:390px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#161618,#333338);color:#fff}.crew-num{font-size:96px;line-height:.8;font-weight:700;letter-spacing:-.08em;margin:0 10px auto}.person.crew p{color:#b9b9c0}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.contact-actions a{text-decoration:none;color:#111;background:#fff;border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:15px 20px;font-weight:700;font-size:14px;transition:.25s}.contact-actions a span{font-weight:500;color:#666;margin-left:8px}.contact-actions a:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.16)}
+.closing{background:var(--red);color:white}.closing h2{font-size:clamp(54px,7vw,110px);max-width:1250px}.closing p{font-size:20px;line-height:1.6;max-width:800px;color:#f3dadd;margin-top:38px}.footer{display:flex;justify-content:space-between;margin-top:80px;padding-top:22px;border-top:1px solid rgba(255,255,255,.3);font-size:13px}
+.takeaways{background:linear-gradient(145deg,#f1f1f4,#fafafa)}.take-head{display:grid;grid-template-columns:.45fr 1.55fr;gap:60px;align-items:start;margin-bottom:52px}.take-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.take{border-radius:28px;padding:32px;min-height:250px}.take span{font-size:13px;font-weight:700;color:var(--red)}.take h3{font-size:27px;line-height:1.08;letter-spacing:-.035em;margin:44px 0 14px}.take p{font-size:16px;line-height:1.58;color:#555;margin:0}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:99;display:none;align-items:center;justify-content:center}.lightbox.open{display:flex}.lightbox img{max-width:88vw;max-height:86vh}.lb{position:absolute;width:50px;height:50px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);backdrop-filter:blur(12px);color:white;border-radius:50%;font-size:25px;cursor:pointer}.close{right:24px;top:24px}.prev{left:24px}.next{right:24px}.count{position:absolute;bottom:20px;color:#aaa;font-size:12px}
+@media(max-width:1050px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.process-columns{grid-template-columns:1fr 1fr}.process-columns .phase:last-child{grid-column:1/-1}.take-head{grid-template-columns:1fr;gap:22px}}
+@media(max-width:800px){.team-head{grid-template-columns:1fr;gap:22px}.team-grid{grid-template-columns:1fr 1fr}.person.crew{min-height:280px}.contact-actions{display:grid;grid-template-columns:1fr}.contact-actions a{display:flex;justify-content:space-between;align-items:center}.wrap{width:min(calc(100% - 34px),var(--max))}section{padding:76px 0}.hero-bottom,.intro-grid,.process-columns,.speed-story,.gallery-head,.take-grid{grid-template-columns:1fr}.process-columns .phase:last-child{grid-column:auto}.brief,.req-grid,.rank-grid,.video-row{grid-template-columns:1fr}.hero{min-height:82vh}.brief{gap:10px}.brief .glass{min-height:120px}.orbit{height:500px;transform:scale(.68);margin:-35px -105px}.core{width:210px;height:210px;padding:26px}.speed-card{padding:28px}.clock{width:260px;height:260px}.clock .value{font-size:86px}.gallery-grid{columns:1}.gallery-item{width:100%}.video-row{grid-template-columns:1fr;max-width:360px;margin-left:auto;margin-right:auto}.speed-proof{border-right:0;border-bottom:1px solid rgba(0,0,0,.09);padding:20px 0 34px}.client-callout{grid-template-columns:1fr!important}.footer{display:block;line-height:1.8}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><div class="eyebrow" style="color:#fff">CASE SHOWCASE · NAM LONG GROUP</div><h1>Nam Long<br>Experience 2026</h1><div class="hero-bottom"><p>Từ một scope quay – chụp sự kiện đến một hệ thống sản xuất nội dung vận hành theo thời gian thực.</p><div class="hero-meta glass"><b>18.09 — 20.09.2026</b><br>Media Agency · admeX Creative Media Agency<br>Production House · Kinglive</div></div></div></header>
+<section class="takeaways float-section"><div class="wrap">
+<div class="take-head"><div class="eyebrow">HIGHLIGHTS</div><h2>Key Takeaways.</h2></div>
+<div class="take-grid">
+<article class="take glass float-card"><span>01</span><h3>Cùng hiểu đúng công việc trước khi bắt đầu</h3><p>Mỗi bên cần cùng hiểu mục tiêu, yêu cầu chuyên môn và đầu ra của công việc — không chỉ phần việc của mình mà cả cách phần việc đó liên kết với toàn bộ sự kiện.</p></article>
+<article class="take glass float-card"><span>02</span><h3>Rõ nhiệm vụ, rõ trách nhiệm, rõ điểm phối hợp</h3><p>Client, agency, production và các bên tham gia cần biết mình phải làm gì, ai chịu trách nhiệm, thông tin cần chuyển cho ai và thời điểm nào cần phối hợp để tránh miss thông tin hoặc triển khai sai.</p></article>
+<article class="take glass float-card"><span>03</span><h3>Một brief chung tạo ra một nhịp vận hành chung</h3><p>Khi cùng làm việc trên một brief đủ chi tiết, các luồng capture, selection, retouch, QC, approval, edit và handover có thể chạy song song mà vẫn kiểm soát được chất lượng.</p></article>
+<article class="take glass float-card"><span>04</span><h3>Kinh nghiệm cần được chuyển thành tiêu chuẩn</h3><p>Những gì đã được kiểm chứng qua Nam Long Experience 2026 cần được hệ thống hóa thành cách làm, tiêu chuẩn và kinh nghiệm phối hợp để tiếp tục ứng dụng và nâng cấp cho các dự án sau.</p></article>
+</div></div></section>
 
+<section class="production-team"><div class="wrap">
+<div class="team-head"><div class="eyebrow">PRODUCTION TEAM</div><div><h2>Những người đứng sau<br>nhịp vận hành của sự kiện.</h2><p class="copy">Từ quản lý dự án, sáng tạo, vận hành đến production — mỗi vai trò là một mắt xích trong cùng một workflow.</p></div></div>
+<div class="team-grid">
+<article class="person person-cuong"><img src="assets/team/cuong.jpg" alt="Cường (Oscar)"><h3>Cường <small>(Oscar)</small></h3><p>Giám đốc Dự án, admeX</p></article>
+<article class="person"><img src="assets/team/xuantruong.jpg" alt="Xuân Trường"><h3>Xuân Trường</h3><p>Executive Producer, Kinglive</p></article>
+<article class="person"><img src="assets/team/hanguyen.jpg" alt="Hà Nguyễn"><h3>Hà Nguyễn</h3><p>Producer, Kinglive</p></article>
+<article class="person person-huy"><img src="assets/team/huyduong.jpg" alt="Huy Dương"><h3>Huy Dương</h3><p>Video Editor, Kinglive</p></article>
+<article class="person"><img src="assets/team/duyanh.jpg" alt="Duy Anh (Aggie)"><h3>Duy Anh <small>(Aggie)</small></h3><p>Giám đốc Sáng tạo</p></article>
+<article class="person"><img src="assets/team/haiyen.jpg" alt="Hải Yến (Alex)"><h3>Hải Yến <small>(Alex)</small></h3><p>Operations Manager</p></article>
+<article class="person"><img src="assets/team/phuongdung.jpg" alt="Phương Dung (Chloe)"><h3>Phương Dung <small>(Chloe)</small></h3><p>Operations, Social</p></article>
+<article class="person"><img src="assets/team/vananh.jpg" alt="Vân Anh (Claire)"><h3>Vân Anh <small>(Claire)</small></h3><p>Operations, Media</p></article>
+<article class="person crew"><div class="crew-num">+7</div><h3>Production Crew</h3><p>Photographer & Cameraman</p></article>
+</div></div></section>
+<section class="assignment float-section"><div class="wrap"><div class="intro-grid"><div class="eyebrow">THE ASSIGNMENT</div><div><h2>Quay chụp sự kiện là scope công việc. Vận hành nội dung theo thời gian thực mới là bài toán cần giải.</h2><p class="copy">Nam Long Experience 2026 đặt ra scope quay, chụp sự kiện, nhưng yêu cầu đầu ra diễn ra liên tục trong suốt ba ngày. Để đáp ứng, khách hàng, admeX và Kinglive cùng làm rõ từng khung giờ, hoạt động, các 3rd party tham gia, vị trí triển khai và phân bổ nhân sự bên trong – bên ngoài stage. Mục tiêu không chỉ là có đủ hình ảnh, mà là tạo ra một quy trình để nội dung được ghi nhận, kiểm soát, phê duyệt và chuyển giao đúng thời điểm.</p></div></div>
+<div class="brief"><div class="glass float-card"><small>KHÁCH HÀNG</small><strong>Nam Long Group</strong></div><div class="glass float-card"><small>THỜI GIAN</small><strong>18–20/09/2026</strong></div><div class="glass float-card"><small>SCOPE OF WORK</small><strong>Quay & chụp sự kiện</strong></div><div class="glass float-card"><small>TEAM</small><strong>admeX × Kinglive</strong></div></div></div></section>
+
+<section class="requirements float-section"><div class="wrap"><div class="eyebrow">WHAT THE EVENT NEEDED</div><h2 style="max-width:980px;margin-top:16px">Không chỉ ghi lại sự kiện.<br>Mà còn đưa nội dung vào dòng chảy của sự kiện.</h2><div class="req-grid"><article class="req float-card"><div class="num">01</div><h3>Live-update</h3><p>Hình ảnh được chọn, retouch và chuyển giao trong thời gian diễn ra sự kiện để phục vụ nhu cầu cập nhật liên tục.</p></article><article class="req float-card"><div class="num">02</div><h3>Recap Day-1 & Day-2</h3><p>Video được tổ chức sản xuất ngay tại sự kiện để rút ngắn tối đa khoảng cách từ hoạt động thực tế đến nội dung xuất bản.</p></article><article class="req float-card"><div class="num">03</div><h3>Asset Distribution</h3><p>Source hình ảnh và video được chuyển giao tới các team Dự án Nam Long Land và các bên liên quan theo nhu cầu vận hành.</p></article></div></div></section>
+
+<section class="process float-section"><div class="wrap">
+<div class="eyebrow" style="color:#ff9aa1">WORKING MODEL</div>
+<h2 style="margin-top:16px">Một event brief đủ sâu để mọi team cùng nhìn thấy một sự kiện.</h2>
+<p class="copy" style="color:#d3d3d8;max-width:930px">Brief được cụ thể hóa theo từng khung giờ, hoạt động, 3rd party tham gia, vị trí triển khai và phân bổ nhân sự cho từng sự kiện thành phần — cả bên trong stage và bên ngoài stage.</p>
+<div class="process-columns">
+  <article class="phase float-card">
+    <h3>Trước sự kiện</h3>
+    <div class="step"><b>01</b><span>Event Client brief</span></div>
+    <div class="step"><b>02</b><span>admeX revise brief theo mục tiêu triển khai</span></div>
+    <div class="step"><b>03</b><span>Kinglive tham gia dự thính & đề xuất giải pháp khi cần</span></div>
+    <div class="step"><b>04</b><span>admeX – Client – Kinglive họp thống nhất</span></div>
+    <div class="step"><b>05</b><span>admeX & Kinglive sitecheck, chọn giải pháp quay chụp</span></div>
+  </article>
+  <article class="phase float-card">
+    <h3>Trong sự kiện</h3>
+    <div class="step"><b>01</b><span>Kinglive triển khai theo kế hoạch & kiểm soát chất lượng production</span></div>
+    <div class="step"><b>02</b><span>admeX kiểm soát triển khai đúng và đủ theo brief</span></div>
+    <div class="step"><b>03</b><span>Retouch, dựng và chuyển giao asset song song với nhịp vận hành sự kiện</span></div>
+  </article>
+  <article class="phase float-card">
+    <h3>Phối hợp & phê duyệt</h3>
+    <div class="step"><b>01</b><span>Nam Long Group follow sát cùng admeX và Kinglive trong suốt quá trình triển khai</span></div>
+    <div class="step"><b>02</b><span>Hình ảnh được chọn, retouch và duyệt trực tiếp tại sự kiện để phục vụ live-update</span></div>
+    <div class="step"><b>03</b><span>Source video được kiểm tra và thống nhất ngay tại hiện trường để team tiếp tục dựng recap</span></div>
+    <div class="step"><b>04</b><span>Feedback và phê duyệt diễn ra theo cùng một nhịp vận hành, giúp rút ngắn thời gian chờ giữa production và publishing</span></div>
+  </article>
+</div></div></section>
+
+<section class="convergence"><div class="wrap"><div class="conv-head"><div class="eyebrow" style="color:#ff9aa1">EVENT CONVERGENCE</div><h2 style="margin-top:16px">Một sự kiện.<br>Nhiều luồng công việc cùng chuyển động.</h2><p class="copy">Các hạng mục không đứng riêng lẻ. Chúng xoay quanh cùng một event brief và cùng một mục tiêu: ghi nhận đúng, xử lý nhanh, kiểm soát chất lượng và đưa nội dung đến đúng bên cần sử dụng.</p></div><div class="orbit"><div class="ring r1"></div><div class="ring r2"></div><div class="core"><img src="assets/nle-ava.png" alt="Nam Long Experience 2026"></div><div class="orbit-track"><div class="pill p1">Photo</div><div class="pill p2">Realtime Retouch</div><div class="pill p3">Video</div><div class="pill p4">On-site QC</div></div><div class="orbit-track two"><div class="pill p1">Publishing</div><div class="pill p2">Client Approval</div><div class="pill p3">Asset Distribution</div><div class="pill p4">3rd-party Coordination</div></div></div></div></section>
+
+<section class="speed"><div class="wrap">
+<div class="speed-story glass">
+<div class="speed-proof"><span>≈ 60</span><small>PHÚT SAU KHI<br>HOẠT ĐỘNG KẾT THÚC</small></div>
+<div class="speed-copy"><div class="eyebrow">REAL-TIME CONTENT OPERATION</div>
+<h2>Nội dung không chờ sự kiện kết thúc mới bắt đầu được xử lý.</h2>
+<p>Trong khi sự kiện vẫn tiếp tục, hình ảnh đã được chọn và retouch, source video đã được kiểm tra, các bên cùng phản hồi và phê duyệt để team có thể tiếp tục dựng. Nhờ workflow được chuẩn bị từ trước và vận hành đồng thời tại hiện trường, video recap có thể hoàn thiện và xuất bản khoảng 60 phút sau khi hoạt động kết thúc.</p>
+<div class="mini-flow"><span>Capture</span><span>Selection</span><span>Realtime Retouch</span><span>On-site QC</span><span>Client Approval</span><span>Edit</span><span>Publish / Handover</span></div>
+</div></div></div></section>
+
+<section class="ranks"><div class="wrap"><div class="eyebrow" style="color:#ff9aa1">COMMUNICATION IMPACT</div><h2 style="margin-top:16px;max-width:1000px">Khi execution tại sự kiện góp phần kéo dài sức lan tỏa.</h2><div class="rank-grid"><div class="rank"><b>#03</b><p>Top 10 Sự kiện Thương hiệu nổi bật nhất tuần<br><small>Theo Kompa</small></p></div><div class="rank"><b>#07</b><p>Top 8 Sự kiện & Chiến dịch Thương hiệu nổi bật nhất tuần<br><small>Theo Socialite</small></p></div></div></div></section>
+
+
+
+<section><div class="wrap"><div class="gallery-head"><div class="eyebrow">MOMENT</div><div><h2>Moments of<br>Nam Long Experience.</h2><p class="copy">Những khoảnh khắc phía trước sân khấu và cả workflow phía sau sự kiện.</p></div></div><div class="video-row"><div class="video-card"><video controls preload="metadata" src="assets/day1recap.mp4"></video><h3>Day 1 Recap</h3></div><div class="video-card"><video controls preload="metadata" src="assets/day2recap.mp4"></video><h3>Day 2 Recap</h3></div></div><div class="gallery-grid" id="gallery"></div></div></section>
+
+
+<section class="closing"><div class="wrap"><div class="eyebrow" style="color:#ffd6d9">THE WORK BEHIND THE RESULT</div><h2 style="margin-top:18px">Một kết quả được tạo nên từ tiêu chuẩn chung và sự phối hợp của nhiều bên.</h2><p>Nam Long Experience 2026 là kết quả của việc khách hàng, agency và production cùng theo sát một mục tiêu, cùng làm rõ tiêu chuẩn và cùng chịu trách nhiệm cho chất lượng đầu ra. Với admeX và Kinglive, case này không chỉ ghi nhận một sự kiện được triển khai tốt, mà còn cho thấy một cách phối hợp có thể tiếp tục được đóng gói, ứng dụng và nâng cấp cho những dự án tiếp theo.</p><div class="contact-actions"><a href="tel:+84394062345">Liên hệ admeX <span>+84 394 062 345</span></a><a href="tel:+84399637931">Liên hệ Kinglive <span>+84 399 637 931</span></a></div><div class="footer"><span>Nam Long Experience 2026 · Nam Long Group</span><span>admeX Creative Media Agency × Kinglive</span></div></div></section>
+
+<div class="lightbox" id="lb"><button class="lb close">×</button><button class="lb prev">‹</button><img id="lbimg"><button class="lb next">›</button><div class="count" id="count"></div></div>
+<script>
+const images=['"assets/NLE.jpg"'];
+const files=["assets/NLE.jpg","assets/NLE-1.jpg","assets/NLE-2.jpg","assets/NLE-3.jpg","assets/NLE-4.jpg","assets/NLE-5.jpg","assets/NLE-6.jpg","assets/NLE-7.jpg","assets/NLE-8.jpg","assets/NLE-9.jpg","assets/NLE-10.jpg","assets/NLE-11.jpg","assets/NLE-12.jpg","assets/NLE-13.jpg","assets/NLE-14.jpg"];
+const gallery=document.getElementById('gallery');files.forEach((src,i)=>{const b=document.createElement('button');b.className='gallery-item';b.innerHTML=`<img src="${src}" alt="Nam Long Experience 2026 ${i+1}" loading="lazy">`;b.onclick=()=>openLB(i);gallery.appendChild(b)});
+const lb=document.getElementById('lb'),im=document.getElementById('lbimg'),count=document.getElementById('count');let cur=0;
+function show(){im.src=files[cur];count.textContent=`${cur+1} / ${files.length}`}function openLB(i){cur=i;show();lb.classList.add('open');document.body.style.overflow='hidden'}function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}function move(d){cur=(cur+d+files.length)%files.length;show()}
+document.querySelector('.close').onclick=closeLB;document.querySelector('.prev').onclick=()=>move(-1);document.querySelector('.next').onclick=()=>move(1);lb.onclick=e=>{if(e.target===lb)closeLB()};document.onkeydown=e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1)};
+</script></body></html>
+<style>
+.process-columns{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important}
+.process-columns>.phase{display:block!important;position:relative!important;width:auto!important;min-width:0!important;height:auto!important;margin:0!important;padding:34px!important;border-radius:30px!important;background:rgba(255,255,255,.13)!important;border:1px solid rgba(255,255,255,.24)!important;backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important}
+.process-columns>.phase h3{font-size:31px!important;line-height:1.05!important;margin:0 0 30px!important}
+@media(max-width:1050px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.process-columns{grid-template-columns:1fr!important}.process-columns>.phase{grid-column:auto!important}}
+</style>
+<style>
+/* Production portrait refinements */
+.person img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .35s ease}
+
+
+
+.person.crew{transition:background .35s ease,transform .35s ease,box-shadow .35s ease}
+.person.crew:hover{background:linear-gradient(135deg,#7f0710 0%,#bd101b 55%,#ed3b45 100%);transform:translateY(-6px);box-shadow:0 24px 58px rgba(164,12,21,.22)}
+
+/* Gentle floating-up motion for key information shapes */
+.float-card{will-change:transform;animation:floatUp 5.8s ease-in-out infinite}
+.float-card:nth-child(2){animation-delay:.55s}
+.float-card:nth-child(3){animation-delay:1.1s}
+.float-card:nth-child(4){animation-delay:1.65s}
+.float-card:nth-child(5){animation-delay:2.2s}
+@keyframes floatUp{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(0,-7px,0)}
+}
+.float-card:hover{animation-play-state:paused}
+
+/* Keep animation restrained on small screens */
+@media(max-width:800px){
+  .float-card{animation-duration:7s}
+  @keyframes floatUp{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-4px,0)}}
+  
+}
+@media(prefers-reduced-motion:reduce){
+  .float-card,.person img,.person.crew{animation:none!important;transition:none!important}
+}
+</style>
+
+<style>
+.production-team .person:not(.crew) img{
+  width:100%!important;
+  aspect-ratio:1/1!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  transform:none!important;
+  border-radius:18px!important;
+}
+.production-team .person{
+  width:auto!important;
+}
+</style>
