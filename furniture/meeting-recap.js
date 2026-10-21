@@ -34,7 +34,7 @@ for(const line of rawLines){
  if(skipTitleContinuation){skipTitleContinuation=false;if(s==='NAM CỦA SLEEMON')continue}
  if(/^[1-9]\.\s/.test(s)||s==='Xác nhận thông tin'){finish();card.title=s;continue}
  if(/^[●○]/.test(s)){flush();current={kind:s[0]==='○'?'sub':'bullet',text:s.slice(1).trim()};continue}
- if(!current)current={kind:'p',text:s};else current.text+=' '+s;
+ if(!current)current={kind:/^(Lưu ý về phạm vi case study:|Case study scope note:|案例范围说明：)/.test(s)?'scope-note':'p',text:s};else current.text+=' '+s;
 }
 finish();
 const markup=cards.map((c,i)=>'<article class="recap-document-card"><div class="recap-card-eyebrow">'+String(i+1).padStart(2,'0')+' / '+(id==='next'?'FOLLOW-UP':'DISCUSSION')+'</div>'+(c.title?'<h3>'+E(c.title)+'</h3>':'')+'<div class="recap-card-copy">'+c.items.map(item=>'<p class="recap-doc-'+item.kind+'">'+E(item.text)+'</p>').join('')+'</div></article>').join('');
