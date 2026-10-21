@@ -7,7 +7,7 @@ function flushSection(){if(!section)return;flushItem();if(section.items.length||
 function newSection(title=''){flushSection();section={title,items:[]}}
 function addLine(s,type){if(!section)section={title:'',items:[]};if(type==='bullet'||type==='sub'){flushItem();item={type,text:s.replace(/^[●○]\s*/,'')}}else if(item){item.text+=' '+s}else{item={type:'p',text:s}}}
 for(const line of lines){const s=line.trim();if(!s){flushItem();continue}
-if(/^PHẦN [1-5]:/.test(s)){flushItem();continue}
+if(/^PHẦN [1-5]:/.test(s)){flushItem();continue}if(id==='strategy'&&s==='NAM CỦA SLEEMON'&&!parts.length&&!section){continue}
 if(/^(?:[1-9]\.\s|VCCorp Team$|Sleemon Team$|BBK Team$|Nội dung thảo luận:$|Xác nhận thông tin$)/.test(s)){newSection(s);continue}
 if(s==='Meeting Recap 21.10'){continue}
 if(/^[●○]/.test(s)){addLine(s,s[0]==='○'?'sub':'bullet');continue}
