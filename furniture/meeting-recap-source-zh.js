@@ -1,0 +1,1 @@
+window.SLEEMON_RECAP_ZH={};
