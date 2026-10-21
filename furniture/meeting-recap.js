@@ -2,7 +2,7 @@
 const E=esc;
 if(id==='overview'){
  const lines=raw.replace(/\r/g,'').split('\n').map(s=>s.trim()).filter(Boolean);
- const teams={'VCCorp Team':[],'Sleemon Team':[],'bbk! Team':[]};let current='',meta=[],agenda=[];
+ const teams={'VCCorp Team':[],'Sleemon Team':[],'BBK Team':[]};let current='',meta=[],agenda=[];
  for(const s of lines){
   if(Object.prototype.hasOwnProperty.call(teams,s)){current=s;continue}
   if(s==='Nội dung thảo luận:'){current='agenda';continue}
@@ -12,7 +12,7 @@ if(id==='overview'){
   else if(current==='meta')meta.push(s);
   else if(teams[current])teams[current].push(s);
  }
- const people=(name,num)=>'<article class="recap-roster-group"><span class="recap-card-eyebrow">'+num+' / PARTICIPANTS</span><h3>'+E(name)+'</h3><ul class="recap-roster">'+teams[name].map(s=>'<li>'+E(s)+'</li>').join('')+'</ul></article>';
+ const people=(name,num)=>'<article class="recap-roster-group"><span class="recap-card-eyebrow">'+num+' / PARTICIPANTS</span><h3>'+E(name==='BBK Team'?'bbk! Team':name)+'</h3><ul class="recap-roster">'+teams[name].map(s=>'<li>'+E(s)+'</li>').join('')+'</ul></article>';
  return '<div class="recap-document-cards recap-document-overview"><div class="recap-roster-grid">'+people('VCCorp Team','01')+people('Sleemon Team','02')+people('BBK Team','03')+'</div><article class="recap-meta-card"><span class="recap-card-eyebrow">04 / MEETING INFORMATION</span><h3>Meeting details</h3><dl class="recap-details">'+meta.map(s=>{const n=s.indexOf(':');return '<div><dt>'+E(s.slice(0,n))+'</dt><dd>'+E(s.slice(n+1).trim())+'</dd></div>'}).join('')+'</dl></article><article class="recap-meta-card"><span class="recap-card-eyebrow">05 / AGENDA</span><h3>Nội dung thảo luận</h3><ul class="recap-agenda">'+agenda.map(s=>'<li>'+E(s.replace(/^[●○]\s*/,''))+'</li>').join('')+'</ul></article></div>';
 }
 if(id==='next'){
